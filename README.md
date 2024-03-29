@@ -8,7 +8,7 @@ Open the terminal and type the command:
 
    -  rofi-theme-selector
 
-search for "squared-nord.rasi" and press alt + a. 
+search for "squared-nord.rasi", press enter and press alt + a. 
 Now you can use that theme. 
 Feel free to add other themes from https://github.com/newmanls/rofi-themes-collection.
 
