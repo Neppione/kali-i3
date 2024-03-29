@@ -9,7 +9,7 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt-get install -y gobuster
 sudo apt-get install -y Seclists
 sudo apt-get install -y xorg lightdm lightdm-gtk-greeter i3 i3-wm i3lock-color i3status i3blocks dmenu
-sudo apt-get install -y flameshot arc-theme feh python3-pip rofi
+sudo apt-get install -y flameshot arc-theme feh python3-pip rofi picom
 
 # Load Fonts
 mkdir -p ~/.local/share/fonts/
