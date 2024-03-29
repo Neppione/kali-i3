@@ -341,7 +341,7 @@ mode "$mode_gaps_left" {
 
 # i3bar with i3blocks
 bar {
-    status_command i3blocks -c /home/$USER/.config/i3blocks/i3blocks.conf
+    status_command i3blocks -c /home/$USER/.config/i3/i3blocks.conf
         i3bar_command i3bar -t
         position top
         height 28
