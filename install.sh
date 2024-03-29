@@ -59,12 +59,9 @@ cp -r .wallpaper/wallpaper.jpg ~/Pictures/
 git clone https://github.com/lr-tech/rofi-themes-collection.git
 cd rofi-themes-collection
 mkdir -p ~/.local/share/rofi/themes/
-cp /themes/squared-nord.rasi ~/.local/share/rofi/themes/squared-nord.rasi
+cp themes/squared-nord.rasi ~/.local/share/rofi/themes/squared-nord.rasi
 
 
-
-
-
-
+# Install Oh-My-ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
