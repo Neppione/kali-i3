@@ -39,12 +39,13 @@ pip3 install pywal
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
-mkdir -p ~/.wallpaper
+mkdir -p ~/.config/scripts
 
 cp .config/i3/config ~/.config/i3/config
-cp .config/rofi/config ~/.config/rofi/config
+cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+cp .config/rofi/squared-nord.rasi ~/.config/rofi/squared-nord.rasi
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-cp -r .wallpaper/wallpaper.jpg ~/home/neppi/Pictures/
+cp -r .wallpaper/wallpaper.jpg ~/home/neppi/Pictures/wallpaper.jpg
 
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
