@@ -204,10 +204,6 @@ bindsym $mod+r mode "resize"
 exec_always feh --bg-fill /home/neppi/Pictures/wallpaper.jpg
 
 
-# Transparency with picom compositor
-exec_always picom -f
-
-
 # Shortcut for Lockscreen
 bindsym $mod+x exec /home/$USER/.config/scripts/lock
 
@@ -362,7 +358,7 @@ for_window [class="^.*"] border pixel 1
 
 
 # screenshot
-bindsym $mod+P exec flameshot gui
+bindsym $mod+p exec flameshot gui
 
 # compton - Compositing Manager for Shadows and Opacity
 exec_always --no-startup-id compton -b --config ~/.config/compton/compton.conf
