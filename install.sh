@@ -9,7 +9,7 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt-get install -y gobuster
 sudo apt-get install -y Seclists
 sudo apt-get install -y xorg lightdm lightdm-gtk-greeter i3 i3-wm i3lock i3status i3blocks dmenu
-sudo apt-get install -y flameshot arc-theme feh python3-pip rofi picom
+sudo apt-get install -y flameshot arc-theme feh python3-pip rofi
 
 # Load Fonts
 mkdir -p ~/.local/share/fonts/
@@ -44,7 +44,7 @@ mkdir -p ~/.wallpaper
 cp .config/i3/config ~/.config/i3/config
 cp .config/rofi/config ~/.config/rofi/config
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-cp -r .wallpaper ~/.wallpaper
+cp -r .wallpaper/wallpaper.jpg ~/home/neppi/Pictures/
 
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
