@@ -35,12 +35,17 @@ sudo apt install -f
 pip3 install pywal
 
 
+# Installing Rofi Themes
+git clone https://github.com/lr-tech/rofi-themes-collection.git
+
+
 # Create directorys for the configs
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/scripts
 mkdir -p ~/.config/compton
+
 
 cp .config/i3/config ~/.config/i3/config
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
@@ -50,4 +55,16 @@ cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp -r .wallpaper/wallpaper.jpg ~/Pictures/
 
 
+# Installing Rofi Themes
+git clone https://github.com/lr-tech/rofi-themes-collection.git
+cd rofi-themes-collection
+mkdir -p ~/.local/share/rofi/themes/
+cp /themes/squared-nord.rasi ~/.local/share/rofi/themes/squared-nord.rasi
+
+
+
+
+
+
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
