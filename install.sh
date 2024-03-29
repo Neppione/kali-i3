@@ -9,7 +9,7 @@ sudo apt update && sudo apt full-upgrade -y
 sudo apt-get install -y gobuster
 sudo apt-get install -y Seclists
 sudo apt-get install -y xorg lightdm lightdm-gtk-greeter i3 i3-wm i3lock-color i3status i3blocks dmenu
-sudo apt-get install -y flameshot arc-theme feh python3-pip rofi picom
+sudo apt-get install -y flameshot arc-theme feh python3-pip rofi compton
 
 # Load Fonts
 mkdir -p ~/.local/share/fonts/
@@ -40,11 +40,13 @@ mkdir -p ~/.config/i3
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/scripts
+mkdir -p ~/.config/compton
 
 cp .config/i3/config ~/.config/i3/config
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/rofi/squared-nord.rasi ~/.config/rofi/squared-nord.rasi
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+cp .config/compton/compton.conf ~/.config/compton.compton.conf
 cp -r .wallpaper/wallpaper.jpg ~/Pictures/
 
 
