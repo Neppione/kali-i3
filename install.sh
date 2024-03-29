@@ -46,7 +46,7 @@ cp .config/i3/config ~/.config/i3/config
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/rofi/squared-nord.rasi ~/.config/rofi/squared-nord.rasi
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
-cp .config/compton/compton.conf ~/.config/compton.compton.conf
+cp .config/compton/compton.conf ~/.config/compton/compton.conf
 cp -r .wallpaper/wallpaper.jpg ~/Pictures/
 
 
