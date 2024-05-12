@@ -360,5 +360,6 @@ for_window [class="^.*"] border pixel 1
 # screenshot
 bindsym $mod+p exec flameshot gui
 
-# compton - Compositing Manager for Shadows and Opacity
-exec_always --no-startup-id compton -b --config ~/.config/compton/compton.conf
+# Transparency with picom compositor
+exec_always picom -f
+
