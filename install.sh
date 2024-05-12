@@ -8,6 +8,7 @@ sudo apt update && sudo apt full-upgrade -y
 # Install tools and i3 window manager
 sudo apt-get install -y gobuster
 sudo apt-get install -y Seclists
+sudo apt-get install -y picom
 sudo apt-get install -y xorg lightdm lightdm-gtk-greeter i3 i3-wm i3lock-color i3status i3blocks dmenu
 sudo apt-get install -y flameshot arc-theme feh python3-pip rofi compton
 
