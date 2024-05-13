@@ -4,6 +4,9 @@
 # Full update and upgrade of Kali Linux
 sudo apt update && sudo apt full-upgrade -y
 
+# Create default directories 
+mkdir ~/htb tcm thm vpn tools
+
 
 # Install tools and i3 window manager
 sudo apt-get install -y gobuster
