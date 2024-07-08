@@ -7,14 +7,19 @@
 #sudo apt update && sudo apt full-upgrade -y
 
 sudo apt-get install -y gobuster
+sudo apt-get install -y seclists
 sudo apt-get install -y i3blocks i3 i3-wm
 sudo apt-get install -y imagemagick
-sudo apt-get install -y
+sudo apt-get install -y rofi
+sudo apt-get install -y dmenu
 
-sudo apt remove i3lock
+
+sudo apt remove -y i3lock
 sudo apt-get install -y i3lock-color
 
 
+#Unzip Rockyou
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz rockyou.txt
 
 
 #Fonts
@@ -45,6 +50,10 @@ sudo apt install -f
 
 
 
+#Rofi Theme
+
+wget https://github.com/newmanls/rofi-themes-collection/blob/master/themes/squared-nord.rasi
+mv squared-nord.rasi /usr/share/rofi/themes
 
 
 
@@ -53,6 +62,20 @@ sudo apt install -f
 
 
 
+
+#Directories
+
+mkdir -p ~/.config/i3
+mkdir -p ~/.config/rofi
+mkdir -p ~/.config/alacritty
+
+
+
+#Copy Files
+
+cp .config/i3/config ~/.config/i3/config
+cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
 
 
 
