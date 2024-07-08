@@ -63,7 +63,8 @@ mkdir -p ~/.config/alacritty
 #Copy Files
 cp .config/i3/config ~/.config/i3/config
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
-cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
+#cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
+cp .config/alacritty/alacritty.conf ~/.config/alacritty/alacritty.conf
 
 
 
