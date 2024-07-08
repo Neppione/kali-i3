@@ -75,7 +75,3 @@ cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 
 
-
-
-
-
