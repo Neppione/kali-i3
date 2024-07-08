@@ -48,8 +48,7 @@ sudo apt install -f
 
 
 #Rofi Theme
-wget https://github.com/newmanls/rofi-themes-collection/blob/master/themes/squared-nord.rasi
-sudo mv squared-nord.rasi /usr/share/rofi/themes
+cp .config/rofi/nord.rasi /usr/share/rofi/themes/nord.rasi
 
 
 
@@ -63,8 +62,8 @@ mkdir -p ~/.config/alacritty
 #Copy Files
 cp .config/i3/config ~/.config/i3/config
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
-#cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
-cp .config/alacritty/alacritty.conf ~/.config/alacritty/alacritty.conf
+cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
+cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 
 
