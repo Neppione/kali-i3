@@ -49,7 +49,7 @@ sudo apt install -f
 
 #Rofi Theme
 wget https://github.com/newmanls/rofi-themes-collection/blob/master/themes/squared-nord.rasi
-mv squared-nord.rasi /usr/share/rofi/themes
+sudo mv squared-nord.rasi /usr/share/rofi/themes
 
 
 
