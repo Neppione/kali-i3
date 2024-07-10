@@ -129,7 +129,7 @@ sudo apt upgrade -y
 
 #Install mitm6
 cd ~/scripts
-wget https://github.com/dirkjanm/mitm6.git
+git clone https://github.com/dirkjanm/mitm6.git
 cd mitm6
 pip3 install -r requirements.txt
 cd ~/kali-i3
