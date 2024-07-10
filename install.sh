@@ -95,7 +95,7 @@ cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
 
 
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
-
+gsettings set org.gnome.desktop.session idle-delay 0
 
 
 #New alacritty with TOML file
