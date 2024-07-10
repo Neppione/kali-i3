@@ -95,11 +95,12 @@ cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
 
 
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+
+
+
+#New alacritty with TOML file
 sudo apt update
 sudo apt upgrade -y
-
-alacritty migrate
-
 
 
 

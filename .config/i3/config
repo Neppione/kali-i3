@@ -54,6 +54,9 @@ tiling_drag modifier titlebar
 # start a terminal alacritty
 bindsym $mod+Return exec alacritty
 
+# Transparency with picom compositor
+exec_always picom -f
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -234,9 +237,14 @@ default_border normal
 
 
 
-
-
-
+# Display Wallpaper
+#exec_always feh --bg-fill ~/.wallpaper/wp.jpg
+#exec_always feh --bg-fill ~/.wallpaper/wp1.jpg
+exec_always feh --bg-fill ~/.wallpaper/wp2.jpg
+#exec_always feh --bg-fill ~/.wallpaper/wp3.jpg
+#exec_always feh --bg-fill ~/.wallpaper/wp4.jpg
+#exec_always feh --bg-fill ~/.wallpaper/wp5.jpg
+#exec_always feh --bg-fill ~/.wallpaper/wp6.jpg
 
 
 
