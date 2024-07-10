@@ -17,6 +17,8 @@ sudo apt-get install -y picom
 sudo apt-get install -y feh
 sudo apt-get install -y lxapearance
 sudo apt-get install -y arc-theme
+sudo apt-get install -y Bloodhound
+
 
 
 #Install i3lock-color
