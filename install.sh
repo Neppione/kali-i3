@@ -97,10 +97,17 @@ cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
 cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
 cp .config/wallpaper/wp* ~/.config/wallpaper/
+cp .config/rofi/config.rasi ~/.config/rofi/config.rasi
+
 
 
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+
+
+
+#Disable Screensaver
 gsettings set org.gnome.desktop.session idle-delay 0
+
 
 
 #New alacritty with TOML file
