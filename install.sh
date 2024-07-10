@@ -25,6 +25,14 @@ sudo gunzip /usr/share/wordlists/rockyou.txt.gz rockyou.txt
 
 
 
+#Install Nessus
+curl --request GET \
+  --url 'https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.7.4-debian10_amd64.deb' \
+  --output 'Nessus-10.7.4-debian10_amd64.deb'
+sudo dpkg -i Nessus-10.7.4-debian10_amd64.deb
+sudo /bin/systemctl start nessusd.service
+
+
 #Install Sublime-Text & Repository
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
