@@ -72,6 +72,8 @@ unzip RobotoMono.zip -d ~/.local/share/fonts/
 #Update font cache, force, verbose
 find ~/.local/share/fonts -name "README.md" -type f -delete
 fc-cache -f -v
+find ~/.local/share/fonts -name "README.md" -type f -delete
+fc-cache -f -v
 
 
 
