@@ -96,7 +96,7 @@ cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
 cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
-cp .config/wallpaper/wp* ~/.config/wallpaper/wp*
+cp .config/wallpaper/wp* ~/.config/wallpaper/
 
 
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
