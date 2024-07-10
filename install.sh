@@ -19,6 +19,7 @@ sudo apt-get install -y lxapearance
 sudo apt-get install -y arc-theme
 sudo apt-get install -y neo4j
 sudo apt-get install -y Bloodhound
+sudo apt-get install -y mitm6
 
 
 
@@ -126,19 +127,11 @@ sudo apt update
 sudo apt upgrade -y
 
 
-
-#Install mitm6
+#Install ldapdomaindump
 cd ~/scripts
-git clone https://github.com/dirkjanm/mitm6.git
-cd mitm6
+git clone https://github.com/dirkjanm/ldapdomaindump.git
+cd ldapdomaindump
 pip3 install -r requirements.txt
-cd ~/kali-i3
-
-
-
-
-
-
 
 
 
