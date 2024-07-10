@@ -51,6 +51,12 @@ sudo dpkg -i obsidian-1.6.5-amd64.deb
 
 
 
+#Install VS-Code
+wget -qO- https://go.microsoft.com/fwlink/?LinkID=760868 > vscode.deb
+sudo dpkg -i vscode.deb
+
+
+
 #Fonts
 mkdir -p ~/.local/share/fonts/
 
