@@ -84,6 +84,9 @@ mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/alacritty/themes
 mkdir -p ~/.config/i3lock
+mkdir -p ~/.config/wallpaper
+
+
 
 #Copy Files
 cp .config/i3/config ~/.config/i3/config
@@ -91,7 +94,7 @@ cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
 cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
-
+cp .config/wallpaper/wp* ~/.config/wallpaper/wp*
 
 
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
