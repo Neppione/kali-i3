@@ -13,7 +13,7 @@ sudo apt-get install -y rofi
 sudo apt-get install -y dmenu
 sudo apt-get install -y nvidia-driver nvidia-settings
 sudo apt-get install -y mesa-utils
-
+sudo apt-get install -y picom
 
 
 #Install i3lock-color
@@ -83,18 +83,22 @@ mkdir -p ~/.config/i3
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/alacritty/themes
-
+mkdir -p ~/.config/i3lock
 
 #Copy Files
 cp .config/i3/config ~/.config/i3/config
 cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
 cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
-cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
+cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
+
 
 
 git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+sudo apt update
+sudo apt upgrade -y
 
-
+alacritty migrate
 
 
 

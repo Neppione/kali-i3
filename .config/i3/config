@@ -200,7 +200,7 @@ bindsym $mod+r mode "resize"
 
 
 # Shortcut for Lockscreen
-bindsym $mod+x exec /home/$USER/.config/scripts/lock
+bindsym $mod+x exec /home/$USER/.config/i3lock/i3lock.conf
 
 
 
@@ -210,7 +210,7 @@ bar {
         i3bar_command i3bar -t
         position top
         height 26
-        font pango:RobotoMono Nerd Font Regular 7.5
+        font pango:RobotoMono Nerd Font Regular 13
         colors {
             statusline #EEEEEE
             background #1C1D2B88
@@ -223,8 +223,8 @@ bar {
 
 # i3-gaps
 for_window [class="^.*"] border pixel 2
-gaps inner 4
-gaps outer 6
+gaps inner 7
+gaps outer 7
 
 client.focused  #82c8ff #82c8ff #dddddd
 client.focused_inactive #333333 #333333 #888888
