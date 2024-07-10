@@ -79,7 +79,7 @@ sudo cp .config/rofi/nord.rasi /usr/share/rofi/themes/nord.rasi
 mkdir -p ~/.config/i3
 mkdir -p ~/.config/rofi
 mkdir -p ~/.config/alacritty
-
+mkdir -p ~/.config/alacritty/themes
 
 
 #Copy Files
@@ -89,7 +89,7 @@ cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
 cp .config/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 
 
-
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
 
 
 
