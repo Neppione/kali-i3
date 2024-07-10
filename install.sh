@@ -14,6 +14,8 @@ sudo apt-get install -y dmenu
 sudo apt-get install -y nvidia-driver nvidia-settings
 sudo apt-get install -y mesa-utils
 sudo apt-get install -y picom
+sudo apt-get install -y feh
+
 
 
 #Install i3lock-color
