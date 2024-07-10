@@ -62,7 +62,7 @@ unzip RobotoMono.zip -d ~/.local/share/fonts/
 
 
 #Update font cache, force, verbose
-fc-cache -fv
+yes | fc-cache -fv
 
 
 
