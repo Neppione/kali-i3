@@ -17,6 +17,7 @@ sudo apt-get install -y picom
 sudo apt-get install -y feh
 sudo apt-get install -y lxapearance
 sudo apt-get install -y arc-theme
+sudo apt-get install -y neo4j
 sudo apt-get install -y Bloodhound
 
 
@@ -97,7 +98,7 @@ mkdir -p ~/.config/alacritty
 mkdir -p ~/.config/alacritty/themes
 mkdir -p ~/.config/i3lock
 mkdir -p ~/.config/wallpaper
-
+mkdir -p ~/scripts
 
 
 #Copy Files
@@ -123,6 +124,40 @@ gsettings set org.gnome.desktop.session idle-delay 0
 #New alacritty with TOML file
 sudo apt update
 sudo apt upgrade -y
+
+
+
+#Install mitm6
+cd ~/scripts
+wget https://github.com/dirkjanm/mitm6.git
+cd mitm6
+pip3 install -r requirements.txt
+cd ~/kali-i3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
