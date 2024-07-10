@@ -13,6 +13,8 @@ sudo apt-get install -y rofi
 sudo apt-get install -y dmenu
 
 
+
+#Install i3lock-color
 sudo apt remove -y i3lock
 sudo apt-get install -y i3lock-color
 
@@ -20,6 +22,19 @@ sudo apt-get install -y i3lock-color
 
 #Unzip Rockyou
 sudo gunzip /usr/share/wordlists/rockyou.txt.gz rockyou.txt
+
+
+
+#Install Sublime-Text & Repository
+wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
+echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+sudo apt-get install sublime-text
+
+
+
+#Install Obsidian
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.5/obsidian-1.6.5-amd64.deb
+sudo dpkg -i obsidian-1.6.5-amd64.deb obsidian
 
 
 
@@ -48,7 +63,7 @@ sudo apt install -f
 
 
 #Rofi Theme
-cp .config/rofi/nord.rasi /usr/share/rofi/themes/nord.rasi
+sudo cp .config/rofi/nord.rasi /usr/share/rofi/themes/nord.rasi
 
 
 
