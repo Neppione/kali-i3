@@ -15,7 +15,8 @@ sudo apt-get install -y nvidia-driver nvidia-settings
 sudo apt-get install -y mesa-utils
 sudo apt-get install -y picom
 sudo apt-get install -y feh
-
+sudo apt-get install -y lxapearance
+sudo apt-get install -y arc-theme
 
 
 #Install i3lock-color
@@ -70,10 +71,8 @@ unzip RobotoMono.zip -d ~/.local/share/fonts/
 
 
 #Update font cache, force, verbose
-find ~/.local/share/fonts -name "README.md" -type f -delete
-fc-cache -f -v
-find ~/.local/share/fonts -name "README.md" -type f -delete
-fc-cache -f -v
+#find ~/.local/share/fonts -name "README.md" -type f -delete
+fc-cache --force --verbose
 
 
 
