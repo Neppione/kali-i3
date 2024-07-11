@@ -1,6 +1,8 @@
 # Kali-i3
 
-Hello everyone. Here is my Kali-Linux installation script with various tools and software. I was inspired by xct (https://github.com/xct/kali-clean) but made some changes for myself. The pro>
+Hello everyone. Here is my Kali-Linux installation script with various tools and software. 
+I was inspired by xct (https://github.com/xct/kali-clean) but made some changes for myself.
+The project would be regulary updated and 
 The following tools and software are installed:
 
 
@@ -34,13 +36,14 @@ The following tools and software are installed:
 
 !!!Note: If you have an AMD graphics card, please
 - Nvidia-driver
-- Nvidia-settings
+- Nvidia-settings;
 comment out.
 
 You can also uncomment mesa-utils if you don't need it.
 mesa-utils is a utility for the Mesa 3D graphics library.
 
 ---
+
 
 # Installation
 
@@ -51,10 +54,9 @@ You need to select your user first. After that you have the settings button in t
 Now you can start.
 
 ---
----
+
 
 # Tools and how to use it
-
 
 ## i3
 
@@ -89,8 +91,62 @@ Here is a quick overview of useful keybinds:
 | `Mod + Shift + r`        | Restart the I3 WM.                                |
 | `Mod + Shift + e`        | Exit I3 WM.                                       |
 
+
+The config file is in ~/.config/i3. You can setup things like 
+
+- i3-gaps (the gaps between the individual windows)
+- Wallpaper
+- i3bar font
+- and the keybinds
+
 ---
+
+
+# Alacritty
+
+It is the newest version (0.13.2) 
+Alacritty is a terminal emulator and full customizable.
+Also installed are the alacritty themes. 
+
+- https://github.com/alacritty/alacritty-theme
+ 
+You only need to edit the alacritty config located in ~.config/alacritty.
+Change the first line from 
+
+	import = ["~/.config/alacritty/themes/themes/[YOUR-THEME]"]
+
+in whatever you want. 
+See the various themes on the github page.
+You can also change the: 
+
+- Font size 
+- Window opacity
+- and various keybinds
+
 ---
+
+
+# rofi 
+
+Rofi is a lightweight application launcher and window switcher for X11.
+It is an customizable alternative to "dmenu". Originally created as a clone of "dmenu", rofi has grown to include a variety of features 
+and can be used for a wide range of tasks.
+
+The config file is located on ~/.config/rofi 
+and the themes located on     /usr/share/rofi/themes
+
+pre-installed is the theme nord.rasi but you can change these to whatever you want.
+Check out the github page for more themes
+
+- https://github.com/newmanls/rofi-themes-collection
+
+---
+
+
+
+
+
+
 
 
 
