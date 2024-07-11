@@ -2,7 +2,8 @@
 
 Hello everyone. Here is my Kali-Linux installation script with various tools and software. 
 I was inspired by xct (https://github.com/xct/kali-clean) but made some changes for myself.
-The project would be regulary updated and 
+I hope you enjoy these setup and pls let me know what you think about it. 
+
 The following tools and software are installed:
 
 
@@ -34,10 +35,12 @@ The following tools and software are installed:
 
 
 
-!!!Note: If you have an AMD graphics card, please
+!!!Note: If you have an AMD graphics card, please commit out the following:
+
 - Nvidia-driver
-- Nvidia-settings;
-comment out.
+- Nvidia-settings
+
+
 
 You can also uncomment mesa-utils if you don't need it.
 mesa-utils is a utility for the Mesa 3D graphics library.
