@@ -7,6 +7,7 @@ sudo apt update && sudo apt full-upgrade -y
 
 sudo apt-get install -y gobuster
 sudo apt-get install -y seclists
+sudo apt-get install -y sublist3r
 sudo apt-get install -y i3blocks i3 i3-wm
 sudo apt-get install -y imagemagick
 sudo apt-get install -y rofi
@@ -18,7 +19,7 @@ sudo apt-get install -y feh
 sudo apt-get install -y lxapearance
 sudo apt-get install -y arc-theme
 sudo apt-get install -y neo4j
-sudo apt-get install -y Bloodhound
+sudo apt-get install -y bloodhound
 sudo apt-get install -y mitm6
 
 
@@ -39,7 +40,7 @@ curl --request GET \
   --url 'https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.7.4-debian10_amd64.deb' \
   --output 'Nessus-10.7.4-debian10_amd64.deb'
 sudo dpkg -i Nessus-10.7.4-debian10_amd64.deb
-sudo /bin/systemctl start nessusd.service
+
 
 
 #Install Sublime-Text & Repository
