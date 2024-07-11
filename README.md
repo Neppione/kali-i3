@@ -4,38 +4,38 @@ Hello everyone. Here is my Kali-Linux installation script with various tools and
 The following tools and software are installed:
 
 
-    gobuster        
-    seclists
-    i3 window manager
-    i3blocks
-    i3lock-color
-    imagemagick
-    rofi
-    dmenu
-    Nvidia-driver
-    nvidia-settings
-    mesa-utils
-    picom
-    feh
-    lxappearance
-    arc-theme
-    neo4j
-    bloodhound
-    mitm6
-    nessus
-    vscode
-    obsidian
-    sublime-text
-    alacritty
-    ldapdomaindump
+gobuster  	
+seclists
+i3 window manager
+i3blocks
+i3lock-color
+imagemagick
+rofi
+dmenu
+Nvidia-driver
+nvidia-settings
+mesa-utils
+picom
+feh
+lxappearance
+arc-theme
+neo4j
+bloodhound
+mitm6
+nessus
+vscode
+obsidian
+sublime-text
+alacritty
+ldapdomaindump
 
 unzip rockyou.txt on default path
 
 
 
-!!!Note: If you have an AMD graphics card, please    
-	Nvidia-driver
-	Nvidia-settings
+!!!Note: If you have an AMD graphics card, please
+- Nvidia-driver
+- Nvidia-settings
 comment out.
 
 You can also uncomment mesa-utils if you don't need it.
