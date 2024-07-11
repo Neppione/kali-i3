@@ -9,6 +9,7 @@ The following tools and software are installed:
 
 - gobuster  	
 - seclists
+- sublist3r
 - i3 window manager
 - i3blocks
 - i3lock-color
