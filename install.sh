@@ -95,11 +95,6 @@ sudo apt update
 sudo apt upgrade -y
 
 
-#Install ldapdomaindump
-cd ~/scripts
-git clone https://github.com/dirkjanm/ldapdomaindump.git
-cd ldapdomaindump
-pip3 install -r requirements.txt
 
 
 
