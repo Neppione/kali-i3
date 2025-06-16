@@ -5,22 +5,16 @@
 #Update && Upgrade && Install
 sudo apt update && sudo apt full-upgrade -y
 
-sudo apt-get install -y gobuster
-sudo apt-get install -y seclists
-sudo apt-get install -y sublist3r
+
 sudo apt-get install -y i3blocks i3 i3-wm
 sudo apt-get install -y imagemagick
 sudo apt-get install -y rofi
 sudo apt-get install -y dmenu
-sudo apt-get install -y nvidia-driver nvidia-settings
-sudo apt-get install -y mesa-utils
 sudo apt-get install -y picom
 sudo apt-get install -y feh
 sudo apt-get install -y lxapearance
 sudo apt-get install -y arc-theme
-sudo apt-get install -y neo4j
-sudo apt-get install -y bloodhound
-sudo apt-get install -y mitm6
+
 
 
 
@@ -33,33 +27,6 @@ sudo apt-get install -y i3lock-color
 #Unzip Rockyou
 sudo gunzip /usr/share/wordlists/rockyou.txt.gz rockyou.txt
 
-
-
-#Install Nessus
-curl --request GET \
-  --url 'https://www.tenable.com/downloads/api/v2/pages/nessus/files/Nessus-10.7.4-debian10_amd64.deb' \
-  --output 'Nessus-10.7.4-debian10_amd64.deb'
-sudo dpkg -i Nessus-10.7.4-debian10_amd64.deb
-
-
-
-#Install Sublime-Text & Repository
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt-get update
-sudo apt-get install sublime-text
-
-
-
-#Install Obsidian
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.5/obsidian-1.6.5-amd64.deb
-sudo dpkg -i obsidian-1.6.5-amd64.deb
-
-
-
-#Install VS-Code
-wget -qO- https://go.microsoft.com/fwlink/?LinkID=760868 > vscode.deb
-sudo dpkg -i vscode.deb
 
 
 
