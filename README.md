@@ -51,7 +51,7 @@ mesa-utils is a utility for the Mesa 3D graphics library.
 
 # Installation
 
-Clone the repo and run the install.sh script without sudo (normal user).
+Clone the repo and run the ./install.sh --with-i3lock-color script without sudo (normal user).
 On the installation you will be asked if you want to replace the README.md from the "Nerd Fonts". You can select (A)ll.
 After that, reboot and on the login screen select in the right bottom corner "i3".
 You need to select your user first. After that you have the settings button in the corner.
