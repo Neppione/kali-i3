@@ -46,9 +46,46 @@ unzip RobotoMono.zip -d ~/.local/share/fonts/
 #find ~/.local/share/fonts -name "README.md" -type f -delete
 fc-cache --force --verbose
 
+#Rofi Theme
+sudo cp .config/rofi/nord.rasi /usr/share/rofi/themes/nord.rasi
 
 
-#Alacritty 
+
+#Directories
+mkdir -p ~/.config/i3
+mkdir -p ~/.config/rofi
+mkdir -p ~/.config/alacritty
+mkdir -p ~/.config/alacritty/themes
+mkdir -p ~/.config/i3lock
+mkdir -p ~/.config/wallpaper
+mkdir -p ~/scripts
+
+
+#Copy Files
+cp .config/i3/config ~/.config/i3/config
+cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
+cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
+cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
+cp .config/wallpaper/wp* ~/.config/wallpaper/
+cp .config/rofi/config.rasi ~/.config/rofi/config.rasi
+
+
+
+git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+
+
+
+#Disable Screensaver
+gsettings set org.gnome.desktop.session idle-delay 0
+
+
+
+#New alacritty with TOML file
+#sudo apt update
+#sudo apt upgrade -y
+
+#Alacritty install
 set -e
 
 echo "=== Alacritty Install Script für Debian ==="
@@ -100,46 +137,6 @@ fi
 
 echo "=== Alacritty wurde erfolgreich lokal installiert ==="
 "$INSTALL_DIR/bin/alacritty" --version
-
-
-#Rofi Theme
-sudo cp .config/rofi/nord.rasi /usr/share/rofi/themes/nord.rasi
-
-
-
-#Directories
-mkdir -p ~/.config/i3
-mkdir -p ~/.config/rofi
-mkdir -p ~/.config/alacritty
-mkdir -p ~/.config/alacritty/themes
-mkdir -p ~/.config/i3lock
-mkdir -p ~/.config/wallpaper
-mkdir -p ~/scripts
-
-
-#Copy Files
-cp .config/i3/config ~/.config/i3/config
-cp .config/i3/i3blocks.conf ~/.config/i3/i3blocks.conf
-cp .config/rofi/rofi.conf ~/.config/rofi/rofi.conf
-cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
-cp .config/i3lock/i3lock.conf ~/.config/i3lock/i3lock.conf
-cp .config/wallpaper/wp* ~/.config/wallpaper/
-cp .config/rofi/config.rasi ~/.config/rofi/config.rasi
-
-
-
-git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
-
-
-
-#Disable Screensaver
-gsettings set org.gnome.desktop.session idle-delay 0
-
-
-
-#New alacritty with TOML file
-sudo apt update
-sudo apt upgrade -y
 
 
 
