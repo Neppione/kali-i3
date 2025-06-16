@@ -48,11 +48,58 @@ fc-cache --force --verbose
 
 
 
-#Alacritty
-wget https://github.com/barnumbirr/alacritty-debian/releases/download/v0.12.0-1/alacritty_0.12.0_amd64_bullseye.deb
-sudo dpkg -i alacritty_0.12.0_amd64_bullseye.deb
-sudo apt install -f
+#Alacritty 
+set -e
 
+echo "=== Alacritty Install Script für Debian ==="
+
+# 1. Abhängigkeiten installieren
+echo "Installiere benötigte System-Pakete..."
+sudo apt update
+sudo apt install -y cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev libxkbcommon-dev python3 curl wget
+
+# 2. Rust via rustup installieren (immer aktuell)
+if ! command -v rustup &> /dev/null; then
+    echo "Installiere rustup..."
+    curl https://sh.rustup.rs -sSf | sh -s -- -y
+    source $HOME/.cargo/env
+else
+    echo "rustup ist bereits installiert, update auf neueste stable Version..."
+    rustup update stable
+fi
+
+# Sicherstellen, dass wir die neueste Rust-Version nutzen
+source $HOME/.cargo/env
+rustup default stable
+
+echo "Aktuelle Rust-Version: $(rustc --version)"
+
+# 3. Alacritty Source Code holen
+cd /tmp
+ALACRITTY_VERSION="v0.15.1"
+echo "Lade Alacritty ${ALACRITTY_VERSION} herunter..."
+wget https://github.com/alacritty/alacritty/archive/refs/tags/${ALACRITTY_VERSION}.tar.gz
+tar -xzf ${ALACRITTY_VERSION}.tar.gz
+cd alacritty-*
+
+# 4. Kompilieren
+echo "Baue Alacritty..."
+cargo build --release
+
+# 5. Lokale Installation nach ~/.config/alacritty/
+INSTALL_DIR="$HOME/.config/alacritty"
+mkdir -p "${INSTALL_DIR}/bin"
+cp target/release/alacritty "${INSTALL_DIR}/bin/"
+
+# 6. (Optional) Symbolischen Link setzen, damit es im PATH ist:
+if [[ ":$PATH:" != *":$HOME/.config/alacritty/bin:"* ]]; then
+    echo "Füge ~/.config/alacritty/bin zum PATH hinzu"
+    echo 'export PATH="$HOME/.config/alacritty/bin:$PATH"' >> "$HOME/.bashrc"
+    export PATH="$HOME/.config/alacritty/bin:$PATH"
+fi
+
+echo "=== Alacritty wurde erfolgreich lokal installiert ==="
+"$INSTALL_DIR/bin/alacritty" --version
 
 
 #Rofi Theme
