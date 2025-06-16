@@ -52,7 +52,8 @@ tiling_drag modifier titlebar
 #bindsym $mod+Return exec i3-sensible-terminal
 
 # start a terminal alacritty
-bindsym $mod+Return exec alacritty
+set $term ~/.config/alacritty/bin/alacritty
+bindsym $mod+Return exec $term
 
 # Transparency with picom compositor
 exec_always picom -f
