@@ -26,6 +26,7 @@ mkdir -p ~/tools
 
 
 cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+sudo cp ~/kali-i3/.config/wallpaper/wp*.jpg /usr/share/backgrounds/kali-16x9/
 
 #Unzip Rockyou
 sudo gunzip /usr/share/wordlists/rockyou.txt.gz rockyou.txt
