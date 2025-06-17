@@ -71,3 +71,58 @@ unzip RobotoMono.zip -d ~/.local/share/fonts/
 # 8. Update font cache, force, verbose
 fc-cache --force --verbose
 
+# 9. Directories
+mkdir -p ~/.config/alacritty
+mkdir -p ~/.config/alacritty/themes
+mkdir -p ~/vpn/{htb,thm,vulnlab}
+mkdir -p ~/boxes/{htb,thm,vulnlab}
+mkdir -p ~/tools
+
+
+cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
+
+# 10. Unzip Rockyou
+sudo gunzip /usr/share/wordlists/rockyou.txt.gz rockyou.txt
+
+# 11. Install Software
+
+sudo apt install seclists -y
+sudo apt install chisel -y
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
