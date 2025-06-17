@@ -1,4 +1,5 @@
 Standard Kali with alacritty and customized config 
+
 pre install:
 	Chisel
  	Seclists
