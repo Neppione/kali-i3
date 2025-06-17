@@ -28,7 +28,7 @@ white   = "#ECEFF4"
 
 [font]
 normal = { family = "RobotoMono Nerd Font", style = "Regular" }
-size = 17.0
+size = 15.0
 
 
 [cursor]
