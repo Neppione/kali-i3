@@ -88,6 +88,7 @@ if [[ ":$PATH:" != *":$HOME/.config/alacritty/bin:"* ]]; then
     echo 'export PATH="$HOME/.config/alacritty/bin:$PATH"' >> "$HOME/.bashrc"
     export PATH="$HOME/.config/alacritty/bin:$PATH"
 fi
+sudo apt install alacritty -y
 
 
 
