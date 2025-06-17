@@ -12,8 +12,6 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/RobotoMono
 unzip Iosevka.zip -d ~/.local/share/fonts/
 unzip RobotoMono.zip -d ~/.local/share/fonts/
 
-
-
 #Update font cache, force, verbose
 fc-cache --force --verbose
 
@@ -28,13 +26,9 @@ mkdir -p ~/tools
 cp .config/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
 sudo cp ~/kali-i3/.config/wallpaper/wp*.jpg /usr/share/backgrounds/kali-16x9/
 
-#Unzip Rockyou
-sudo gunzip /usr/share/wordlists/rockyou.txt.gz rockyou.txt
 
-#Install Software
-sudo apt install seclists -y
-sudo apt install chisel -y
-sudo apt install alacritty -y
+sudo apt install -y seclists
+sudo apt install -y chisel
 
 echo "=== Alacritty Install Script für Debian ==="
 
@@ -89,7 +83,7 @@ if [[ ":$PATH:" != *":$HOME/.config/alacritty/bin:"* ]]; then
     echo 'export PATH="$HOME/.config/alacritty/bin:$PATH"' >> "$HOME/.bashrc"
     export PATH="$HOME/.config/alacritty/bin:$PATH"
 fi
-sudo apt install alacritty -y
+sudo apt install -y alacritty
 
 
 
